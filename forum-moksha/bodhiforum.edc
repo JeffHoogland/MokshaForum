@@ -71,6 +71,7 @@ collections {
 #include "edcs/desklock.edc"
 #include "edcs/notification.edc"
 #include "edcs/tclock.edc"
+#include "edcs/mokshapreview.edc"
 
 
 
