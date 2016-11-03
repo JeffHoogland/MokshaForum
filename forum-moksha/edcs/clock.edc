@@ -109,6 +109,7 @@ group { name: "e/modules/clock/digital";
 					size_range: 9 72;
 					text: "--:--";
 					align: 0.5 0.5;
+					ellipsis: -1;
 				}
 			}
 			description { state: "horizontal" 0.0;
@@ -116,6 +117,7 @@ group { name: "e/modules/clock/digital";
 				text {
 					fit: 0 1;
 					min: 1 0;
+					ellipsis: -1;
 				}
 			}
 			description { state: "vertical" 0.0;
@@ -123,6 +125,7 @@ group { name: "e/modules/clock/digital";
 				text {
 					fit: 1 0;
 					min: 0 1;
+					ellipsis: -1;
 				}
 			}
 		}
@@ -148,6 +151,7 @@ group { name: "e/modules/clock/digital";
 					size: 11;
 					fit: 0 1;
 					min: 1 0;
+					ellipsis: -1;
 					size_range: 8 12;
 					align: 0.5 1.0;
 					text: "Tod, 12/30/2011";
@@ -604,6 +608,7 @@ group { name: "e/modules/clock/calendar/dayname";
             text { font: "Sans"; size: 11;
                min: 1 1;
                align: 0.5 0.5;
+               ellipsis: -1;
                text_class: "module_small";
             }
          }
@@ -695,6 +700,7 @@ group { name: "e/modules/clock/calendar/day";
             color3: 0 0 0 0;
             text { font: "Sans"; size: 10;
                min: 1 1;
+               ellipsis: -1;
                align: 0.5 0.5;
             }
          }
@@ -793,6 +799,7 @@ group { name: "e/modules/clock/calendar";
             text { font: "Sans:style=Bold"; size: 12;
                align: 0.0 0.5;
                min: 0 1;
+               ellipsis: -1;
                text_class: "module_normal";
             }
          }
@@ -812,6 +819,7 @@ group { name: "e/modules/clock/calendar";
                align: 1.0 0.5;
                min: 0 1;
                text_class: "module_normal";
+               ellipsis: -1;
             }
          }
       }
