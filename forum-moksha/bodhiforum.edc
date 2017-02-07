@@ -30,6 +30,7 @@ data {
 	item: "theme/version"	"0.169999blah";
 	item: "theme/author"	"Alberto 'Duma' Verdoja";
 	item: "gtk-theme"		"BodhiForum GTK";
+    item: "elm-theme"		"Forum-elm";
 }
  
 #include "edcs/colors.edc"
