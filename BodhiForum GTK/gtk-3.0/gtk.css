@@ -178,22 +178,21 @@
                        to (#C2C2C2));
 }
     
-.check, .menu .menuitem.check:prelight {
-	background-image: url("Images/CheckRadio/check1.png");
-	background-clip: border-box;
+.check, .menu .menuitem.check:insensitive {
+	-gtk-icon-source: url("Images/CheckRadio/check1.png"); 
 }
 .check:active {
-	background-image: url("Images/CheckRadio/check2.png");
+	-gtk-icon-source: url("Images/CheckRadio/check2.png"); 
 }
-.check:prelight, .menu .menuitem.check:prelight:active
+.check:checked, .menu .menuitem.check:prelight:active
 {
-	background-image: url("Images/CheckRadio/check2.png");
+	-gtk-icon-source: url("Images/CheckRadio/check2.png"); 
 }
 .check:insensitive:active {
-	background-image: url("Images/CheckRadio/check02.png");
+	-gtk-icon-source: url("Images/CheckRadio/check02.png"); 
 }
 .check:insensitive {
-	background-image: url("Images/CheckRadio/check0.png");
+	-gtk-icon-source: url("Images/CheckRadio/check0.png"); 
 }
 
 .check row, .check row:prelight {
