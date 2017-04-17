@@ -342,7 +342,7 @@
                   font: "Sans:style=Bold";
                   size: 12;
                   min: 0 1;
-                  ellipsis: -1;
+                  //ellipsis: -1;
                   align: 0.5 1.0;
                   text_class: "fileman_typebuf";
                }
@@ -1810,17 +1810,18 @@
             description {
                state: "default" 0.0;
                rel1 {
-                  offset: 2 -12;
+                  offset: 4 -2;
                   relative: 0.0 1.0;
                }
-               rel2.offset: -2 -10;
+               rel2.offset: -5 -2;
                color: 0 0 0 255;
+               align: 0.5 1.0;
                text {
                   font: "Sans";
-                  size: 11;
+                  size: 10;
                   min: 0 1;
-                  ellipsis: -1;
-                  align: 0.5 0.0;
+                  //ellipsis: -1;
+                  align: 0.5 1.0;
                   text_class: "fileman_icon";
                }
             }
@@ -1831,7 +1832,7 @@
                   offset: 2 -12;
                   relative: 0.0 1.0;
                }
-               rel2.offset: -2 -10;
+               rel2.offset: -2 -2;
                color: 0 0 0 255;
             }
          }
