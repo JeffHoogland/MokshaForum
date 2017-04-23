@@ -7,7 +7,7 @@ group {												\
       data {										\
          item: "inset" INSET_COLOR;					\
          item: "plain" PLAIN_COLOR;					\
-         item: "default" "255 255 255";				\
+         item: "default" "255 169 0";				\
       }												\
       parts {										\
          part {										\
