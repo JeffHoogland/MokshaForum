@@ -31,14 +31,14 @@
 			}						\
 		part { 			name: "e.text.title";						\
 			type: TEXT;						\
-			effect: OUTLINE_SHADOW;						\
+			effect: SOFT_SHADOW;						\
 			scale: 1;						\
 			description	{						\
 						state: "default" 0;						\
 						min: 0 10;						\
 						color: 255 255 255 255;						\
-						color2: 255 255 255 255;						\
-						color3: 255 255 255 255;						\
+						color2: 0 0 0 0;						\
+						color3: 0 0 0 0;						\
 						rel1	{						\
 							offset: 12 10;						\
 							to_x: "border";						\
@@ -51,7 +51,7 @@
 			 				color_class: "border_title";						\
 						text	{						\
 								   font: "Harabara";						\
-								size: 15;						\
+								size: 12;						\
 								text_class: "title_bar";						\
 							}						\
 						}						\
@@ -59,8 +59,8 @@
 						state: "focused" 0;						\
 						min: 0 10;						\
 						color: 255 255 255 255;						\
-						color2: 255 255 255 255;						\
-						color3: 255 255 255 255;						\
+						color2: 0 0 0 0;						\
+						color3: 0 0 0 0;						\
 						rel1	{						\
 							offset: 12 10;						\
 							to_x: "border";						\
@@ -73,7 +73,7 @@
 			 				color_class: "border_title_active";						\
 						text	{						\
 								   font: "Harabara";						\
-								size: 15;						\
+								size: 12;						\
 								text_class: "title_bar";						\
 							}						\
 						}						\
