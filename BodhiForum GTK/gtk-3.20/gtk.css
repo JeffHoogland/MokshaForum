@@ -6,6 +6,7 @@
 /* default color scheme */
 @define-color bg_color #B1C75C;
 @define-color fg_color #000000; 
+@define-color tool_color #DBE4B7; 
 @define-color base_color #ffffff;
 @define-color text_color #000000;
 @define-color selected_bg_color #5A860A;
@@ -16,7 +17,7 @@
 @define-color sidebar_fg_color @fg_color;
 
 /* dark color scheme */
-@define-color dark_bg_color #B1C75C;
+@define-color dark_bg_color @bg_color;
 @define-color dark_fg_color #000;
 
 /* colormap actually used by the theme, to be overridden in other css files */
