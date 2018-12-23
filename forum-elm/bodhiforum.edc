@@ -27,7 +27,7 @@ spectra {
 
 data {
 	item: "theme/name"		"Bodhi Forum";
-	item: "theme/version"	"0.19999blah";
+	item: "theme/version"	"0.7.4";
 	item: "theme/author"	"Alberto 'Duma' Verdoja";
 	item: "gtk-theme"		"BodhiForum GTK";
 	item: "version"			"110";
