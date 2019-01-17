@@ -219,7 +219,7 @@ group { name: "elm/spinner/base/default";
          signal: "mouse,clicked,1"; source: "elm.dragable.slider";
          action: SIGNAL_EMIT "elm,action,entry,toggle" "elm";
       }
-      program {
+/*      program {
          signal: "elm,action,focus_highlight,show"; source: "elm";
          action: STATE_SET "focused" 0.0;
          target: "inset";
@@ -228,7 +228,7 @@ group { name: "elm/spinner/base/default";
          signal: "elm,action,focus_highlight,hide"; source: "elm";
          action: STATE_SET "default" 0.0;
          target: "inset";
-      }
+      }*/
       program {
          signal: "elm,state,enabled"; source: "elm";
          action: STATE_SET "default" 0.0;
@@ -238,7 +238,7 @@ group { name: "elm/spinner/base/default";
          target: "disabler";
          target: "elm.swallow.entry";
          target: "elm.text";
-         target: "inset";
+         //target: "inset";
          target: "base";
       }
       program {
@@ -250,7 +250,7 @@ group { name: "elm/spinner/base/default";
          target: "disabler";
          target: "elm.swallow.entry";
          target: "elm.text";
-         target: "inset";
+         //target: "inset";
          target: "base";
       }
    }

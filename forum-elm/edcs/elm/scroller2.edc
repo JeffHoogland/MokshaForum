@@ -191,6 +191,9 @@ images {
             inherit: "default" 0.0;
             min: 0 0;
          }
+         description { state: "clicked" 0.0;
+            inherit: "default" 0.0;
+         }
       }
       /*part { name: "y_vbar_up_mapper"; type: SPACER;
          scale: 1;
@@ -460,6 +463,9 @@ images {
          description { state: "hidden" 0.0;
             inherit: "default" 0.0;
             min: 0 0;
+         }
+         description { state: "clicked" 0.0;
+            inherit: "default" 0.0;
          }
       }
       /*part { name: "x_hbar_left_mapper"; type: SPACER;
@@ -1003,6 +1009,30 @@ group { name: "elm/scroller/base/noclip";
          }
       }
       part { name: "inset";
+         description { state: "default" 0.0;
+            visible: 0;
+         }
+      }
+   }
+}
+
+group { name: "elm/scroller/base/popup/no_inset_shadow";
+   inherit: "elm/scroller/base/default";
+   alias: "elm/scroller/base/no_inset_shadow";
+   alias: "elm/gengrid/base/no_inset_shadow";
+   parts {
+      part { name: "elm.swallow.content"; type: SWALLOW;
+         description { state: "default" 0.0;
+            rel1.offset: 0 0;
+            rel2.offset: 0 0;
+         }
+      }
+      part { name: "inset";
+         description { state: "default" 0.0;
+            visible: 0;
+         }
+      }
+      part { name: "shadow";
          description { state: "default" 0.0;
             visible: 0;
          }

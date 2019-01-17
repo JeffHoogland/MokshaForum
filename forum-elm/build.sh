@@ -1,2 +1,2 @@
 #!/bin/sh
-edje_cc $@ -id . -fd . bodhiforum.edc -o ../forum-elm.edj
+edje_cc $@ -id . -fd . bodhiforum.edc -o ../MokshaForum-elm.edj

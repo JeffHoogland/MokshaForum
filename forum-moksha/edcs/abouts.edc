@@ -787,7 +787,7 @@ part {										\
 				 text {
 					 align: 1.0 1.0;
 					 style: "theme_about_version";
-					 text: "<hilight>version:</hilight> 0.169999blah<br>"
+					 text: "<hilight>version:</hilight> 0.7.4<br>"
 							"<hilight>license:</hilight> cc-by-nc-sa";
 				 }
 			 }
