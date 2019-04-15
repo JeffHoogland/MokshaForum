@@ -433,16 +433,17 @@ styles {
 			color3: 255 255 255 255;					\
 			text {										\
 			font: "Sans";								\
-			size: 11;						\
-			min: 1 1;								\
-			align: 0.0 0.5;							\
-			text_class: "ilist_item";				\
-				}				\
+			size: 11;						            \
+			min: 1 1;									\
+			align: 0.0 0.5;								\
+			ellipsis: -1;								\
+			text_class: "ilist_item";					\
+				}										\
 		}												\
 		description {									\
 			state: "selected" 0.0;						\
 			inherit: "default" 0.0;						\
-				color_class: "ilist_item_selected";			\
+				color_class: "ilist_item_selected";		\
 		}												\
 	}
 
