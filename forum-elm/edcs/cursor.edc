@@ -393,19 +393,19 @@ group { name: "e/pointer/enlightenment/hand/color";
 group { name: "e/pointer/enlightenment/move/color";
    inherit: "e/pointer/enlightenment/hand/color";
    programs {
-      program { name: "move1";
-         signal: "load"; source: "";
-         action: STATE_SET "faded" 0.0;
-         transition: SINUSOIDAL 0.5;
-         target: "glow";
-         after: "move2";
-      }
-      program { name: "move2";
-         action: STATE_SET "default" 0.0;
-         transition: SINUSOIDAL 0.5;
-         target: "glow";
-         after: "move1";
-      }
+      //~ program { name: "move1";
+         //~ signal: "load"; source: "";
+         //~ action: STATE_SET "faded" 0.0;
+         //~ transition: SINUSOIDAL 0.5;
+         //~ target: "glow";
+         //~ after: "move2";
+      //~ }
+      //~ program { name: "move2";
+         //~ action: STATE_SET "default" 0.0;
+         //~ transition: SINUSOIDAL 0.5;
+         //~ target: "glow";
+         //~ after: "move1";
+      //~ }
    }
 }
 
