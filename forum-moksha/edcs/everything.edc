@@ -785,7 +785,7 @@
       program { name: "slide_left2";
          action: STATE_SET "alternate" 0.0;
          transition: ACCELERATE 0.25;
-         target: "e.swallow.list";
+         //~ target: "e.swallow.list";
          target: "e.swallow.list2";
          after: "left_end";
       }
@@ -795,7 +795,7 @@
       program {
          signal: "e,action,slide,right"; source: "e";
          action: STATE_SET "alternate" 0.0;
-         target: "e.swallow.list";
+         //~ target: "e.swallow.list";
          target: "e.swallow.list2";
          after: "slide_right2";
       }

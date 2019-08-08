@@ -276,7 +276,7 @@
             /* if the checkmark is to be displayed */
             signal: "e,state,checked";
             source: "e";
-            action: STATE_SET "on" 0.0;
+            action: STATE_SET "selected" 0.0;
             transition: LINEAR 0.0;
             target: "base";
          }
@@ -851,7 +851,7 @@
             source: "e";
             action: STATE_SET "combo" 0.0;
             target: "e.swallow.icon";
-            target: "e.text.label";
+            //~ target: "e.text.label";
          }
          program {
             name: "disable";
@@ -1401,6 +1401,12 @@
                rel1.to: "e.swallow.content";
                rel2.to: "e.swallow.content";
                color: 255 255 255 255;
+            }
+            description {
+               state: "disabled" 0.0;
+               rel1.to: "e.swallow.content";
+               rel2.to: "e.swallow.content";
+               color: 255 255 255 64;
             }
          }
          part {

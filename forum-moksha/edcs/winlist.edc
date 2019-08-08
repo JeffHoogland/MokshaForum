@@ -350,7 +350,7 @@
             transition: LINEAR 0.2;
             target: "bg";
             //target: "fg";
-            target: "e.text.label";
+            //~ target: "e.text.label";
          }
          program {
             name: "unsel";
