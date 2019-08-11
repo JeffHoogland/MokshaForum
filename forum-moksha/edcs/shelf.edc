@@ -237,7 +237,7 @@ description {	state: POS 0.0;							\
 description {	state: POS 0.0; 						\
 				inherit: "default" 0.0; 				\
 				rel1.relative: 0.01 0.01;				\
-				rel2.relative: 0.99 0.99;				\
+				rel2.relative: 0.89 0.99;				\
 				rel1.offset: OFF1; 						\
 				rel2.offset: OFF2;						\
             }
@@ -286,17 +286,17 @@ program { name: POS; 									\
             description { 										\
                state: "default" 0.0; 							\
 		   }													\
-		   ORIENT("left", 1 1, -4 0)							\
+		   ORIENT("left", 1 1, 2 0)								\
 		   ORIENT("left_top", 1 0, -4 0)						\
 		   ORIENT("left_bottom", 1 0, -4 0)						\
 		   ORIENT("right", 4 1, 0 0)							\
 		   ORIENT("right_top", 4 1, 0 0)						\
 		   ORIENT("right_bottom", 4 1, 0 0)						\
-		   ORIENT("top", 1 1, -1 -4)								\
+		   ORIENT("top", 1 1, -1 -4)							\
 		   ORIENT("top_left", 1 1, -1 -4)						\
 		   ORIENT("top_right", 1 1, -1 -4)						\
-		   ORIENT("bottom", 1 4, -1 -1)							\
-		   ORIENT("bottom_left", 1 4, -1 -1)						\
+		   ORIENT("bottom", 1 4, 2 0)							\
+		   ORIENT("bottom_left", 1 4, -1 -1)					\
 		   ORIENT("bottom_right", 1 4, -1 -1)					\
          } 														\
       } 														\
