@@ -285,7 +285,7 @@
               source:"";
               action:STATE_SET "focused" 0.0;
               transition:LINEAR 0.0;
-              target:"button_image";
+              //~ target:"button_image";
               target:"item";
               target:"label";
             }

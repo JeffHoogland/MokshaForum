@@ -214,7 +214,7 @@
 				 color_class: "ilist_item_base"; 
 			}
 			description {
-				state: "active" 0.0;
+				state: "selected" 0.0;
 				color: 242 133 12 255;
 			}
 		}
@@ -346,7 +346,7 @@
             name: "sel";
             signal: "e,state,selected";
             source: "e";
-            action: STATE_SET "active" 0.0;
+            action: STATE_SET "selected" 0.0;
             transition: LINEAR 0.2;
             target: "bg";
             //target: "fg";

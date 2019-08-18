@@ -2367,7 +2367,7 @@ collections {
             name: "h1_down1";
             signal: "mouse,down,1";
             source: "h1";
-            action: STATE_SET "clicked" 0.0;
+            action: STATE_SET "default" 0.0;
             target: "h1";
          }
          program {
@@ -2399,7 +2399,7 @@ collections {
             name: "h2_down1";
             signal: "mouse,down,1";
             source: "h2";
-            action: STATE_SET "clicked" 0.0;
+            action: STATE_SET "default" 0.0;
             target: "h2";
          }
          program {
@@ -2431,7 +2431,7 @@ collections {
             name: "v1_down1";
             signal: "mouse,down,1";
             source: "v1";
-            action: STATE_SET "clicked" 0.0;
+            action: STATE_SET "default" 0.0;
             target: "v1";
          }
          program {
@@ -2463,7 +2463,7 @@ collections {
             name: "v2_down1";
             signal: "mouse,down,1";
             source: "v2";
-            action: STATE_SET "clicked" 0.0;
+            action: STATE_SET "default" 0.0;
             target: "v2";
          }
          program {

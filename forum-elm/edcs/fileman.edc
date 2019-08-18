@@ -352,7 +352,6 @@ styles {
 		target: "icon_box";									\
 		target: "icon_box_bg";								\
 		target: "icon_box_shadow";							\
-		target: "icon";										\
 		/*after: "thumb_gen2";*/							\
 	}														\
 	program {												\
@@ -950,13 +949,13 @@ group {
       program {
          signal: "e,toolbar,left"; source: "e";
          action: STATE_SET "tb_left" 0.0;
-         target: "e.swallow.toolbar";
+         //~ target: "e.swallow.toolbar";
          target: "region";
       }
       program {
          signal: "e,toolbar,right"; source: "e";
          action: STATE_SET "tb_right" 0.0;
-         target: "e.swallow.toolbar";
+         //~ target: "e.swallow.toolbar";
          target: "region";
       }
       program {
@@ -2227,7 +2226,7 @@ images {
           name: "sb_hbar_in";
           signal: "mouse,in";
           source: "e.dragable.hbar";
-          action:  STATE_SET "hilited" 0.0;
+          action:  STATE_SET "clicked" 0.0;
           target: "e.dragable.hbar";
       //    target: "hbar_stipple";
           }
