@@ -31,6 +31,7 @@ data {
 	item: "theme/author"	"Alberto 'Duma' Verdoja";
 	item: "gtk-theme"		"BodhiForum GTK";
     item: "elm-theme"		"Forum-elm";
+    item: "icon-theme"      "Icons-Moksha-Forum"; 
 }
  
 #include "edcs/colors.edc"
