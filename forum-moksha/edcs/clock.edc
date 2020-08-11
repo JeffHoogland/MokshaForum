@@ -4,18 +4,22 @@
 
 group { name: "e/modules/clock/digital";
 	script {
-		public do_seconds, do_24h, tick_timer, horizontal;
-
+		public do_seconds, do_24h, do_date, tick_timer, horizontal;
 		public clock_cb(val) {
 			new year, month, day, yearday, weekday, hour, minute;
 			new Float:second;
-			new v, dosec, do24h, tim;
+			new v, dosec, do24h, tim, mul;
 			new buf[32], bhour[3], bminute[3], bsecond[4], bampm[3];
 
 			date(year, month, day, yearday, weekday, hour, minute, second);
 
 			dosec = get_int(do_seconds);
 			do24h = get_int(do_24h);
+			
+			mul = 3
+			if (get_int(do_date) || (dosec)) {
+            mul = 4;
+         }
 
 			if (do24h) {
 				strcat(bampm, "");
@@ -65,6 +69,7 @@ group { name: "e/modules/clock/digital";
 			} else {
 				tim = timer(60.0 - (second), "clock_cb", 1);
 			}
+			set_min_size(10 * mul, 16);
 			set_int(tick_timer, tim);
 		}
 
@@ -83,13 +88,16 @@ group { name: "e/modules/clock/digital";
 		part { name: "time-area";
 			type: RECT;
 			description { state: "default" 0.0;
-			color: 255 255 255 0;
+				color: 0 0 0 0;
+				//~ rel1.offset: -2 2;
+				//~ rel2.offset:  2 2;
 			}
 			description { state: "show-date" 0.0;
 				inherit: "default" 0.0;
 				rel2 {
 					relative: 1.0 0.0;
 					to: "e.text.today";
+					offset: 0 4;
 				}
 			}
 		}
@@ -98,18 +106,20 @@ group { name: "e/modules/clock/digital";
 			effect: SHADOW;
 			scale: 1;
 			description { state: "default" 0.0;
-				color: 0 0 0 255;
-				color3: 255 255 255 0;
+				color: 0 0 0 198;
+				color3: 255 255 255 30;
 				rel1.to: "time-area";
 				rel2.to: "time-area";
 				text {
 					text_class: "clock";
-					size: 14;
+					font: "Sans:style=Bold";
+					size: 12;
+					//~ min: 0 0;
 					fit: 1 1;
-					size_range: 9 72;
-					text: "--:--";
-					align: 0.5 0.5;
+					size_range: 8 72;
 					ellipsis: -1;
+					align: 0.5 0.5;
+					text: "--:--";
 				}
 			}
 			description { state: "horizontal" 0.0;
@@ -117,7 +127,6 @@ group { name: "e/modules/clock/digital";
 				text {
 					fit: 0 1;
 					min: 1 0;
-					ellipsis: -1;
 				}
 			}
 			description { state: "vertical" 0.0;
@@ -125,7 +134,6 @@ group { name: "e/modules/clock/digital";
 				text {
 					fit: 1 0;
 					min: 0 1;
-					ellipsis: -1;
 				}
 			}
 		}
@@ -134,33 +142,25 @@ group { name: "e/modules/clock/digital";
 			effect: SHADOW;
 			scale: 1;
 			description { state: "default" 0.0;
-				color: 0 0 0 255;
-				color3: 255 255 255 30;
-				align: 0.5 1.0;
-				min: 0 8;
-				max: 9999 30;
-				rel1 {
-					relative: 0.0 0.9;
-				}
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-				text {
-					text_class: "clock";
-					size: 11;
-					fit: 0 1;
-					min: 1 0;
-					ellipsis: -1;
-					size_range: 8 12;
-					align: 0.5 1.0;
-					text: "Tod, 12/30/2011";
-				}
-				visible: 0;
-			}
+             rel1.relative: 0.0 1.0;
+             align: 0.5 1.0;
+             color: 0 0 0 198;
+             color3: 255 255 255 30; 
+             text { font: FN; size: 9;
+                //~ text_class: "clock";
+                align: 0.5 0.5;
+                text: "Tod, 12/30/2011";
+                //~ min: 0 1;
+                //~ size_range: 8 10;  
+                //~ fit: 1 0;
+             }
+             //~ fixed: 0 1;
+          }
 			description { state: "show-date" 0.0;
 				inherit: "default" 0.0;
-				visible: 1;
+				fixed: 0 1;
+				text.min: 1 1;
+				text.ellipsis: -1;
 			}
 		}
 
@@ -172,6 +172,7 @@ group { name: "e/modules/clock/digital";
 			}
 		}
 	}
+
 
 	programs {
 		program { name: "init";
@@ -185,6 +186,7 @@ group { name: "e/modules/clock/digital";
 			signal: "e,state,date,on";
 			source: "e";
 			script {
+			set_int(do_date, 1);
             set_state(PART:"time-area", "show-date", 0.0);
             set_state(PART:"e.text.today", "show-date", 0.0);
             restart_clock();
@@ -194,6 +196,7 @@ group { name: "e/modules/clock/digital";
 			signal: "e,state,date,off";
 			source: "e";
 			script {
+			set_int(do_date, 0);
 			set_state(PART:"time-area", "default", 0.0);
 			set_state(PART:"e.text.today", "default", 0.0);
             restart_clock();
