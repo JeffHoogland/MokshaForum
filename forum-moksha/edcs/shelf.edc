@@ -237,7 +237,7 @@ description {	state: POS 0.0;							\
 description {	state: POS 0.0; 						\
 				inherit: "default" 0.0; 				\
 				rel1.relative: 0.01 0.01;				\
-				rel2.relative: 0.89 0.99;				\
+				rel2.relative: 0.99 0.99;				\
 				rel1.offset: OFF1; 						\
 				rel2.offset: OFF2;						\
             }
