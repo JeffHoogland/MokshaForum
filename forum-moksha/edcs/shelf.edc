@@ -267,7 +267,7 @@ program { name: POS; 									\
                image.border: 8 8 8 8; 							\
                fill.smooth: 0; 									\
             } 													\
-            BASE_ORIENT("left", -10 0, -1 -8)					\
+            BASE_ORIENT("left", -6 0, -1 -1)					\
             BASE_ORIENT("left_top", -10 -10, -1 -8)				\
             BASE_ORIENT("left_bottom", -10 0, -1 10)			\
             BASE_ORIENT("right", 0 0, 10 -1)					\
@@ -286,7 +286,7 @@ program { name: POS; 									\
             description { 										\
                state: "default" 0.0; 							\
 		   }													\
-		   ORIENT("left", 1 1, 2 0)								\
+		   ORIENT("left", 1 1, -4 0)								\
 		   ORIENT("left_top", 1 0, -4 0)						\
 		   ORIENT("left_bottom", 1 0, -4 0)						\
 		   ORIENT("right", 4 1, 0 0)							\
