@@ -236,8 +236,8 @@ description {	state: POS 0.0;							\
 #define ORIENT(POS, OFF1, OFF2)							\
 description {	state: POS 0.0; 						\
 				inherit: "default" 0.0; 				\
-				rel1.relative: 0.01 0.01;				\
-				rel2.relative: 0.89 0.99;				\
+				rel1.relative: 0.0 0.0;				\
+				rel2.relative: 1.0 1.0;				\
 				rel1.offset: OFF1; 						\
 				rel2.offset: OFF2;						\
             }
@@ -267,7 +267,7 @@ program { name: POS; 									\
                image.border: 8 8 8 8; 							\
                fill.smooth: 0; 									\
             } 													\
-            BASE_ORIENT("left", -10 0, -1 -8)					\
+            BASE_ORIENT("left", -6 0, -1 -1)					\
             BASE_ORIENT("left_top", -10 -10, -1 -8)				\
             BASE_ORIENT("left_bottom", -10 0, -1 10)			\
             BASE_ORIENT("right", 0 0, 10 -1)					\
@@ -286,7 +286,7 @@ program { name: POS; 									\
             description { 										\
                state: "default" 0.0; 							\
 		   }													\
-		   ORIENT("left", 1 1, 2 0)								\
+		   ORIENT("left", 1 4, -4 -4)								\
 		   ORIENT("left_top", 1 0, -4 0)						\
 		   ORIENT("left_bottom", 1 0, -4 0)						\
 		   ORIENT("right", 4 1, 0 0)							\
@@ -295,7 +295,7 @@ program { name: POS; 									\
 		   ORIENT("top", 1 1, -1 -4)							\
 		   ORIENT("top_left", 1 1, -1 -4)						\
 		   ORIENT("top_right", 1 1, -1 -4)						\
-		   ORIENT("bottom", 1 4, 2 0)							\
+		   ORIENT("bottom", 5 3, -2 1)							\
 		   ORIENT("bottom_left", 1 4, -1 -1)					\
 		   ORIENT("bottom_right", 1 4, -1 -1)					\
          } 														\
