@@ -878,7 +878,7 @@
    group {
       name: "e/widgets/entry/scrollframe";
       // min: 12 12;
-      images.image: "img/shelf_inset_overlay.png" COMP;
+      images.image: "img/shelf_inset_over.png" COMP;
       parts {
          part {
             name: "base";

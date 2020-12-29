@@ -1,14 +1,14 @@
 
 images
 {
-   image: "icon_hdd.png" COMP;
+   //~ image: "icon_hdd.png" COMP;
    image: "eject.png" COMP;
    image: "eject_bg.png" COMP;
-   image: "tag_ext3.png" COMP;
-   image: "tag_fat.png" COMP;
-   image: "tag_hfs.png" COMP;
-   image: "tag_ufs.png" COMP;
-   image: "tag_dvd.png" COMP;
+   //~ image: "tag_ext3.png" COMP;
+   //~ image: "tag_fat.png" COMP;
+   //~ image: "tag_hfs.png" COMP;
+   //~ image: "tag_ufs.png" COMP;
+   //~ image: "tag_dvd.png" COMP;
    image: "header_bg.png" COMP;
    image: "header_down.png" COMP;
    image: "home.png" COMP;
