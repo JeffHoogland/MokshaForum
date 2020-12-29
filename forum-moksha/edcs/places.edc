@@ -338,6 +338,7 @@ images
                rel2.relative: 0.5 0.5;
                rel2.to: "icon";
                color: 255 255 255 0;
+               image.normal: "eject.png";
             }
             description { state: "ext3" 0.0;
                image.normal: "tag_ext3.png";
