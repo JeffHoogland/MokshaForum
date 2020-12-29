@@ -27,7 +27,7 @@ group { name: "e/modules/ibar/separator/horizontal";
 
 
 group { name: "e/modules/ibar/menu";
-   images.image: "darken_rounded_square.png" COMP;
+   //~ images.image: "darken_rounded_square.png" COMP;
    parts {
       part { name: "sizer"; type: SPACER;
          description { state: "default"; }
@@ -110,9 +110,9 @@ group { name: "e/modules/ibar/menu";
 }
 
 group { name: "e/modules/ibar/menu/item";
-   images.image: "glow_small.png" COMP;
+   //~ images.image: "glow_small.png" COMP;
    images.image: "win_shadow.png" COMP;
-   images.image: "mini_box_glow.png" COMP;
+   //~ images.image: "mini_box_glow.png" COMP;
    parts {
       part { name: "icon"; type: SPACER;
          description { state: "default";

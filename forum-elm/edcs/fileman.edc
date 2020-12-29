@@ -541,7 +541,6 @@ styles {
 		image: "img/icon_efm_vol_mounted.png" COMP;				\
 		image: "img/icon_efm_vol_unmounted.png" COMP;		\
 		image: "img/menu_sel_bg.png" COMP;		\
-		image: "img/wallpaper_pat1.png" COMP;		\
 		image: "img/rubber_bg.png" COMP;		\
 		image: "img/rubber.png" COMP;		\
 }

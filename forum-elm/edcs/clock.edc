@@ -774,7 +774,7 @@ group { name: "e/modules/clock/calendar";
    images.image: "img/scroll_right.png" COMP;
    images.image: "img/scroll_left2.png" COMP;
    images.image: "img/scroll_right2.png" COMP;
-   images.image: "img/scoll_bg.png" COMP;
+   //~ images.image: "img/scoll_bg.png" COMP;
    images.image: "img/scroll_overlay2.png" COMP;
    parts {
       part { name: "e.text.month"; type: TEXT;
