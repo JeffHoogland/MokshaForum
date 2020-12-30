@@ -241,6 +241,7 @@ styles {
 		description {										\
 			state: "default" 0.0;							\
 			visible: 0;										\
+			image.normal: "img/icon_efm_dnd_copy.png";		\
 		}													\
 		description {										\
 			state: "visible" 0.0;							\
@@ -259,6 +260,7 @@ styles {
 				relative: 1.0 0.85;							\
 				offset: -1 -1;								\
 			}												\
+			image.normal: "img/icon_efm_dnd_copy.png";		\
 		}													\
 		description {										\
 			state: "copy" 0.0;								\
@@ -454,6 +456,7 @@ styles {
 		description {											\
 			state: "default" 0.0;								\
 			color: 0 0 0 0;										\
+			image.normal: "img/icon_efm_vol_unmounted.png";		\
 		}														\
 		description {											\
 			state: "visible" 0.0;								\
@@ -469,6 +472,7 @@ styles {
 				relative: REL2;									\
 				to: "icon";										\
 			}													\
+			image.normal: "img/icon_efm_vol_unmounted.png";		\
 		}														\
 		description {											\
 			state: "unmounted" 0.0;								\
@@ -541,7 +545,6 @@ styles {
 		image: "img/icon_efm_vol_mounted.png" COMP;				\
 		image: "img/icon_efm_vol_unmounted.png" COMP;		\
 		image: "img/menu_sel_bg.png" COMP;		\
-		image: "img/wallpaper_pat1.png" COMP;		\
 		image: "img/rubber_bg.png" COMP;		\
 		image: "img/rubber.png" COMP;		\
 }

@@ -80,9 +80,9 @@ group { name: "elm/scroller/entry/default";
 }
 
 group { name: "elm/scroller/entry_single/default";
-	images.image: "img/entry0.png" COMP;
+	//~ images.image: "img/entry0.png" COMP;
 	images.image: "img/shelf_inset_over.png" COMP;
-	images.image: "img/entry2.png" COMP;
+	//~ images.image: "img/entry2.png" COMP;
 	images.image: "img/shelf_inset_bg.png" COMP;
    
    //data.item: "focus_highlight" "on";

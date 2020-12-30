@@ -169,7 +169,7 @@ group { name: "elm/hover/base/default";
 }
 
 group { name: "elm/hover/base/popout";
-   images.image: "img/menu_bg_SH.png" COMP;
+   //~ images.image: "img/menu_bg_SH.png" COMP;
    parts {
       part { name: "elm.swallow.offset"; type: SWALLOW;
          description { state: "default" 0.0;

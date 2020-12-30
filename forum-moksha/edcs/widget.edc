@@ -878,7 +878,7 @@
    group {
       name: "e/widgets/entry/scrollframe";
       // min: 12 12;
-      images.image: "img/shelf_inset_overlay.png" COMP;
+      images.image: "img/shelf_inset_over.png" COMP;
       parts {
          part {
             name: "base";
@@ -1587,6 +1587,7 @@
          }
          part {
             name: "label";
+            type: RECT;
             mouse_events: 0;
             clip_to: "clip";
             description {
@@ -1889,6 +1890,7 @@
          }
          part {
             name: "label";
+            type: RECT;
             mouse_events: 0;
             clip_to: "clip";
             description {

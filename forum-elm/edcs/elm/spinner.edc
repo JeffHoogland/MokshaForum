@@ -2,7 +2,7 @@ group { name: "elm/spinner/base/default";
 
    images.image: "img/left.png" COMP;
    images.image: "img/shelf_inset_bg.png" COMP;
-   images.image: "/shelf_inset_over.png" COMP;   
+   images.image: "img/shelf_inset_over.png" COMP;   
    images.image: "img/right.png" COMP;
    
    parts {

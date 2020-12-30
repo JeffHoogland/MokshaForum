@@ -596,7 +596,7 @@
          image: "connman-connecting-3.png" COMP;
          image: "connman-connecting-4.png" COMP;
          image: "connman-ethernet.png" COMP;
-         image: "connman-wifi.png" COMP;
+         //~ image: "connman-wifi.png" COMP;
       }
       min: 350 148;
       script {

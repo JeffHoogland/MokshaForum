@@ -1,5 +1,5 @@
 group { name: "elm/check/base/default";
-   images.image: "img/check02.png" COMP;
+   //~ images.image: "img/check02.png" COMP;
    images.image: "img/check0.png" COMP;
    images.image: "img/check1.png" COMP;
    images.image: "img/check2.png" COMP;
@@ -288,7 +288,7 @@ group { name: "elm/check/base/toggle";
 	images.image: "img/actionslider_base.png" COMP;
 	images.image: "img/actionslider_base2.png" COMP;
 	images.image: "img/button.png" COMP;
-	images.image: "img/button0.png" COMP;
+	//~ images.image: "img/button0.png" COMP;
    
 #define ICON     1
 #define LABEL    2

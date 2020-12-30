@@ -1,14 +1,14 @@
 
 images
 {
-   image: "icon_hdd.png" COMP;
+   //~ image: "icon_hdd.png" COMP;
    image: "eject.png" COMP;
    image: "eject_bg.png" COMP;
-   image: "tag_ext3.png" COMP;
-   image: "tag_fat.png" COMP;
-   image: "tag_hfs.png" COMP;
-   image: "tag_ufs.png" COMP;
-   image: "tag_dvd.png" COMP;
+   //~ image: "tag_ext3.png" COMP;
+   //~ image: "tag_fat.png" COMP;
+   //~ image: "tag_hfs.png" COMP;
+   //~ image: "tag_ufs.png" COMP;
+   //~ image: "tag_dvd.png" COMP;
    image: "header_bg.png" COMP;
    image: "header_down.png" COMP;
    image: "home.png" COMP;
@@ -338,6 +338,7 @@ images
                rel2.relative: 0.5 0.5;
                rel2.to: "icon";
                color: 255 255 255 0;
+               image.normal: "eject.png";
             }
             description { state: "ext3" 0.0;
                image.normal: "tag_ext3.png";

@@ -785,9 +785,9 @@ group {
 group {	 
  name: "e/widgets/border/noresize_dialog/border";
 
-	 images{
-	 	image: "img/dialog_base.png" COMP;
-	 	}
+	 //~ images{
+	 	//~ image: "img/dialog_base.png" COMP;
+	 	//~ }
 	 parts {
 	 	DIALOG_PART();
 	}
@@ -815,7 +815,7 @@ group {
 group {
 	name: "e/widgets/border/notoolbar/border";
 	images {
-		image: "img/dialog_base.png" COMP;
+		//~ image: "img/dialog_base.png" COMP;
 	 	image: "img/btClsdialog.png" COMP;
 	 	image: "img/btMaxdialog.png" COMP;
 		image: "img/btIcndialog.png" COMP;
