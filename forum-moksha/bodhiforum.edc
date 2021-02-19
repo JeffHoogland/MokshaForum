@@ -29,9 +29,9 @@ data {
 	item: "theme/name"		"Bodhi Forum";
 	item: "theme/version"	"0.7.4";
 	item: "theme/author"	"Alberto 'Duma' Verdoja";
-	item: "gtk-theme"		"BodhiForum GTK";
-    item: "elm-theme"		"Forum-elm";
-    item: "icon-theme"      "Icons-Moksha-Forum"; 
+	item: "gtk-theme"		  "MokshaForum-GTK";
+  item: "elm-theme"		  "Forum-elm";
+  item: "icon-theme"    "MokshaForum-Icons"; 
 }
  
 #include "edcs/colors.edc"
